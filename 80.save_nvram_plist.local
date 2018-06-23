@@ -1,0 +1,4 @@
+#!/bin/bash
+
+diskutil mount $(ioreg -lw0 -p IODeviceTree | grep boot-log | sed -e 's/.*<//' -e 's/>//' | xxd -r -p | grep SelfDevicePath | awk -F'GPT,' '{print $2}' | cut -d, -f1)
+nvram -x -p > /Volumes/EFI/nvram.plist

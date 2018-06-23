@@ -56,6 +56,21 @@
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
+					<integer>7</integer>
+				</dict>
+				<dict>
+					<key>Codec</key>
+					<string>AD1988b</string>
+					<key>CodecID</key>
+					<integer>299112843</integer>
+					<key>ConfigData</key>
+					<data>
+					ASceEAJHHhABZx4QAlceEAF3HqABdx+RAUce
+					gQ==
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
 					<integer>1</integer>
 				</dict>
 			</array>

@@ -1,39 +1,44 @@
 
-Clover EFI installer log - Tue May 22 21:29:45 EEST 2018
-Installer version: v2.4k r4493 EFI bootloader
+Clover EFI installer log - Fri Jun 22 13:22:06 EEST 2018
+Installer version: v2.4k r4558 EFI bootloader
 ======================================================
-/dev/disk0 (internal, physical):
+/dev/disk0
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      GUID_partition_scheme                        *256.1 GB   disk0
    1:                        EFI EFI                     209.7 MB   disk0s1
    2:                  Apple_HFS Macintosh HD            255.2 GB   disk0s2
    3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
-
-/dev/disk1 (internal, physical):
+/dev/disk1
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      GUID_partition_scheme                        *3.0 TB     disk1
    1:                        EFI EFI                     209.7 MB   disk1s1
    2:                  Apple_HFS Macintosh HD2           2.5 TB     disk1s2
-   3:                  Apple_HFS macOS                   100.0 GB   disk1s3
+   3:                  Apple_HFS macOS                   300.7 GB   disk1s3
    4:                 Apple_Boot Recovery HD             650.0 MB   disk1s4
-   5:                  Apple_HFS Sierra                  99.5 GB    disk1s5
-   6:                 Apple_Boot Recovery HD             650.0 MB   disk1s6
-   7:       Microsoft Basic Data Windows 7 SP1           100.0 GB   disk1s7
-   8:       Microsoft Basic Data Windows 10              198.9 GB   disk1s8
-
+   5:                  Apple_HFS ASD OS 3S123            100.4 GB   disk1s5
+   6:       Microsoft Basic Data                         97.7 GB    disk1s6
+/dev/disk2
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *102.4 MB   disk2
+   1:                  Apple_HFS Waves_PK_Patch_100      102.4 MB   disk2s1
 ======================================================
 Backing up EFI files
 
-Backing up stage2 file /Volumes/Macintosh HD/EFIROOTDIR/boot  to /Volumes/Macintosh HD/EFI-Backups/r4493/2018-05-22-21h29/boot
-Backing up /Volumes/Macintosh HD/EFIROOTDIR/EFI folder to /Volumes/Macintosh HD/EFI-Backups/r4493/2018-05-22-21h29/EFI
-======================================================
-Installing BootSectors/BootLoader
+Backing up stage2 file /Volumes/Macintosh HD/EFIROOTDIR/boot  to /Volumes/Macintosh HD/EFI-Backups/r4558/2018-06-22-13h22/boot
+Backing up /Volumes/Macintosh HD/EFIROOTDIR/EFI folder to /Volumes/Macintosh HD/EFI-Backups/r4558/2018-06-22-13h22/EFI
+No Active Partition
 
-Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /Volumes/Macintosh HD
-Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /Volumes/Macintosh HD
+Stage 0 - Writting boot0af to /dev/disk0
+dd: //usr/standalone/i386/boot0af -> /dev/disk0
+
+Stage 1 - Writting boot1f32 to /dev/rdisk0s1
+dd if=/dev/rdisk0s1 count=1 bs=512 of=/tmp/origbs
+boot volume format is FAT32
+cp /tmp/boot1f32 /tmp/newbs
+dd if=/tmp/origbs of=/tmp/newbs skip=3 seek=3 bs=1 count=87 conv=notrunc
+dd if=/tmp/newbs of=/dev/rdisk0s1
+
 Stage 2 - Written boot6 (x64) to /Volumes/ESP/boot
-
-Removing drivers64UEFI/VBoxHfs-64.efi driver because HFSPlus driver present
 
 ======================================================
 =========== Clover EFI Installation Finish ===========
