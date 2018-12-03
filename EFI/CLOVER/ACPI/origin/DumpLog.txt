@@ -1,0 +1,52 @@
+18:575  13:464  Found BIOS RSDP at FBA70
+18:575  0:000  Saving ACPI tables from RSDP FBA70 to EFI\CLOVER\ACPI\origin ...
+18:575  0:000   FBA70: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+18:581  0:006    (Xsdt: BFF80100, Rsdt: BFF80000)
+18:581  0:000    BFF80100: 'XSDT', 'OEMXSDT', Rev: 1, Len: 84 -> XSDT.aml
+18:585  0:003    BFF80000: 'RSDT', 'OEMRSDT', Rev: 1, Len: 60 -> RSDT.aml
+18:589  0:003    Tables in Xsdt: 6
+18:589  0:000    0. BFF80290: 'FACP', 'OEMFACP', Rev: 3, Len: 244 -> FACP.aml
+18:593  0:003        (Dsdt: BFF80440, Facs: BFF8E000, XDsdt: BFF80440, XFacs: BFF8E000)
+18:593  0:000        BFF80440: 'DSDT', 'A0932073', Rev: 1, Len: 41184 -> DSDT.aml
+18:602  0:009        BFF8E000: 'FACS', Ver: 1, Len: 64 -> FACS.aml
+18:607  0:004    1. BFF80390: 'APIC', 'OEMAPIC', Rev: 1, Len: 108 -> APIC.aml
+18:611  0:004    2. BFF80400: 'MCFG', 'OEMMCFG', Rev: 1, Len: 60 -> MCFG.aml
+18:615  0:004    3. BFF8E040: 'OEMB', 'AMI_OEM', Rev: 1, Len: 129 -> OEMB.aml
+18:621  0:005    4. BFF8A520: 'HPET', 'OEMHPET', Rev: 1, Len: 56 -> HPET.aml
+18:626  0:004    5. BFF8A560: 'OSFR', 'OEMOSFR', Rev: 1, Len: 176 -> OSFR.aml
+18:630  0:004    Tables in Rsdt: 6
+18:630  0:000    0. BFF80200: 'FACP', 'OEMFACP', Rev: 2, Len: 132 -> RSDT-FACP.aml
+18:634  0:004        (Dsdt: BFF80440, Facs: BFF8E000)
+18:634  0:000        BFF80440: 'DSDT', 'A0932073', Rev: 1, Len: 41184
+18:635  0:001        BFF8E000: 'FACS', Ver: 1, Len: 64
+18:635  0:000    1. BFF80390: 'APIC', 'OEMAPIC', Rev: 1, Len: 108
+18:635  0:000    2. BFF80400: 'MCFG', 'OEMMCFG', Rev: 1, Len: 60
+18:635  0:000    3. BFF8E040: 'OEMB', 'AMI_OEM', Rev: 1, Len: 129
+18:635  0:000    4. BFF8A520: 'HPET', 'OEMHPET', Rev: 1, Len: 56
+18:635  0:000    5. BFF8A560: 'OSFR', 'OEMOSFR', Rev: 1, Len: 176
+18:635  0:000  Found UEFI Acpi 2.0 RSDP at BFBB0000
+18:635  0:000  Printing ACPI tables from RSDP BFBB0000 ...
+18:635  0:000   BFBB0000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+18:635  0:000    (Xsdt: BFF80100, Rsdt: BFF80000)
+18:635  0:000    BFF80100: 'XSDT', 'OEMXSDT', Rev: 1, Len: 84
+18:635  0:000    BFF80000: 'RSDT', 'OEMRSDT', Rev: 1, Len: 60
+18:635  0:000    Tables in Xsdt: 6
+18:635  0:000    0. BFF80290: 'FACP', 'OEMFACP', Rev: 3, Len: 244
+18:635  0:000        (Dsdt: BFF80440, Facs: BFF8E000, XDsdt: BFF80440, XFacs: BFF8E000)
+18:635  0:000        BFF80440: 'DSDT', 'A0932073', Rev: 1, Len: 41184
+18:636  0:001        BFF8E000: 'FACS', Ver: 1, Len: 64
+18:636  0:000    1. BFF80390: 'APIC', 'OEMAPIC', Rev: 1, Len: 108
+18:636  0:000    2. BFF80400: 'MCFG', 'OEMMCFG', Rev: 1, Len: 60
+18:636  0:000    3. BFF8E040: 'OEMB', 'AMI_OEM', Rev: 1, Len: 129
+18:636  0:000    4. BFF8A520: 'HPET', 'OEMHPET', Rev: 1, Len: 56
+18:636  0:000    5. BFF8A560: 'OSFR', 'OEMOSFR', Rev: 1, Len: 176
+18:636  0:000    Tables in Rsdt: 6
+18:636  0:000    0. BFF80200: 'FACP', 'OEMFACP', Rev: 2, Len: 132
+18:636  0:000        (Dsdt: BFF80440, Facs: BFF8E000)
+18:636  0:000        BFF80440: 'DSDT', 'A0932073', Rev: 1, Len: 41184
+18:637  0:001        BFF8E000: 'FACS', Ver: 1, Len: 64
+18:637  0:000    1. BFF80390: 'APIC', 'OEMAPIC', Rev: 1, Len: 108
+18:637  0:000    2. BFF80400: 'MCFG', 'OEMMCFG', Rev: 1, Len: 60
+18:637  0:000    3. BFF8E040: 'OEMB', 'AMI_OEM', Rev: 1, Len: 129
+18:637  0:000    4. BFF8A520: 'HPET', 'OEMHPET', Rev: 1, Len: 56
+18:637  0:000    5. BFF8A560: 'OSFR', 'OEMOSFR', Rev: 1, Len: 176

@@ -35,43 +35,12 @@
 					<integer>299112843</integer>
 					<key>ConfigData</key>
 					<data>
-					ASceEAJHHhABZx4QAlceEAF3HqABdx+RAUce
-					gQ==
+					ASceEAF3HqABdx+RAUcegQ==
 					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
-					<integer>12</integer>
-				</dict>
-				<dict>
-					<key>Codec</key>
-					<string>AD1988b</string>
-					<key>CodecID</key>
-					<integer>299112843</integer>
-					<key>ConfigData</key>
-					<data>
-					ASceEAJHHhABZx4QAlceEAF3HqABdx+RAUce
-					gQ==
-					</data>
-					<key>FuncGroup</key>
-					<integer>1</integer>
-					<key>LayoutID</key>
-					<integer>7</integer>
-				</dict>
-				<dict>
-					<key>Codec</key>
-					<string>AD1988b</string>
-					<key>CodecID</key>
-					<integer>299112843</integer>
-					<key>ConfigData</key>
-					<data>
-					ASceEAJHHhABZx4QAlceEAF3HqABdx+RAUce
-					gQ==
-					</data>
-					<key>FuncGroup</key>
-					<integer>1</integer>
-					<key>LayoutID</key>
-					<integer>1</integer>
+					<integer>66</integer>
 				</dict>
 			</array>
 			<key>IOClass</key>
@@ -89,7 +58,6 @@
 					<integer>1</integer>
 					<key>Layouts</key>
 					<array>
-						<integer>12</integer>
 						<integer>1</integer>
 					</array>
 					<key>widgets</key>

@@ -1,6 +1,6 @@
 
-Clover EFI installer log - Fri Jun 22 13:22:06 EEST 2018
-Installer version: v2.4k r4558 EFI bootloader
+Clover EFI installer log - Wed Oct  3 11:24:58 EEST 2018
+Installer version: v2.4k r4674 EFI bootloader
 ======================================================
 /dev/disk0
    #:                       TYPE NAME                    SIZE       IDENTIFIER
@@ -15,23 +15,27 @@ Installer version: v2.4k r4558 EFI bootloader
    2:                  Apple_HFS Macintosh HD2           2.5 TB     disk1s2
    3:                  Apple_HFS macOS                   300.7 GB   disk1s3
    4:                 Apple_Boot Recovery HD             650.0 MB   disk1s4
-   5:                  Apple_HFS ASD OS 3S123            100.4 GB   disk1s5
-   6:       Microsoft Basic Data                         97.7 GB    disk1s6
+   5: 7C3457EF-0000-11AA-AA11-00306543ECAC               100.4 GB   disk1s5
+   6:       Microsoft Basic Data BOOTCAMP                97.7 GB    disk1s6
 /dev/disk2
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        *102.4 MB   disk2
-   1:                  Apple_HFS Waves_PK_Patch_100      102.4 MB   disk2s1
+   0:      GUID_partition_scheme                        *1.0 TB     disk2
+   1:                        EFI EFI                     209.7 MB   disk2s1
+   2:                  Apple_HFS StoreJet Transcend      999.9 GB   disk2s2
 ======================================================
 Backing up EFI files
 
-Backing up stage2 file /Volumes/Macintosh HD/EFIROOTDIR/boot  to /Volumes/Macintosh HD/EFI-Backups/r4558/2018-06-22-13h22/boot
-Backing up /Volumes/Macintosh HD/EFIROOTDIR/EFI folder to /Volumes/Macintosh HD/EFI-Backups/r4558/2018-06-22-13h22/EFI
+Backing up stage2 file /Volumes/Macintosh HD/EFIROOTDIR/boot  to /Volumes/Macintosh HD/EFI-Backups/r4692/2018-10-03-11h24/boot
+Backing up /Volumes/Macintosh HD/EFIROOTDIR/EFI folder to /Volumes/Macintosh HD/EFI-Backups/r4692/2018-10-03-11h24/EFI
 No Active Partition
 
-Stage 0 - Writting boot0af to /dev/disk0
-dd: //usr/standalone/i386/boot0af -> /dev/disk0
+Stage 0 - Writing boot0af to /dev/rdisk0
+dd if=/dev/rdisk0 count=1 bs=512 of=/tmp/origMBR
+cp /tmp/origMBR /tmp/newMBR
+dd if=//usr/standalone/i386/boot0af of=/tmp/newMBR bs=440 count=1 conv=notrunc
+fdisk -f /tmp/newMBR -u -y /dev/rdisk0
 
-Stage 1 - Writting boot1f32 to /dev/rdisk0s1
+Stage 1 - Writing boot1f32 to /dev/rdisk0s1
 dd if=/dev/rdisk0s1 count=1 bs=512 of=/tmp/origbs
 boot volume format is FAT32
 cp /tmp/boot1f32 /tmp/newbs
