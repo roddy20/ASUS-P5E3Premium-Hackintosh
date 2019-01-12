@@ -15,7 +15,7 @@
 				<key>AddIMEI_80000</key>
 				<false/>
 				<key>AddMCHC_0008</key>
-				<false/>
+				<true/>
 				<key>AddPNLF_1000000</key>
 				<false/>
 				<key>DeleteUnused_400000</key>
@@ -72,11 +72,6 @@
 			<key>FixMask</key>
 			<string>0x10000000</string>
 		</dict>
-		<key>RenameDevices</key>
-		<dict>
-			<key>_SB.PCI0.SBRG</key>
-			<string>LPCB</string>
-		</dict>
 		<key>SSDT</key>
 		<dict>
 			<key>Generate</key>
@@ -85,16 +80,14 @@
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>###DefaultVolume</key>
-		<string>Macintosh HD</string>
-		<key>Arguments</key>
+		<key>#Arguments</key>
 		<string>-no_compat_check </string>
-		<key>Debug</key>
+		<key>#Debug</key>
 		<false/>
+		<key>Arguments</key>
+		<string>-nehalem_error_disable</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
-		<key>NeverHibernate</key>
-		<true/>
 		<key>NoEarlyProgress</key>
 		<true/>
 		<key>Timeout</key>
@@ -102,56 +95,21 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
+		<key>#HDAInjection</key>
+		<false/>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>12</integer>
+			<false/>
+			<key>ResetHDA</key>
+			<true/>
 		</dict>
+		<key>HDMIInjection</key>
+		<false/>
+		<key>LANInjection</key>
+		<false/>
 		<key>Properties</key>
 		<dict>
-			<key>#PciRoot(0x0)/Pci(0x1b,0x0)</key>
-			<dict>
-				<key>MaximumBootBeepVolume</key>
-				<data>
-				QA==
-				</data>
-				<key>PinConfigurations</key>
-				<data>
-				</data>
-				<key>layout-id</key>
-				<data>
-				DAAAAA==
-				</data>
-				<key>platformFamily</key>
-				<data>
-				AA==
-				</data>
-			</dict>
-			<key>#PciRoot(0x0)/Pci(0x1e,0x0)/Pci(0x3,0x0)</key>
-			<dict>
-				<key>fwswappedbib</key>
-				<data>
-				AQAAAA==
-				</data>
-			</dict>
-			<key>#PciRoot(0x0)/Pci(0x1f,0x0)</key>
-			<dict>
-				<key>#LPCB</key>
-				<string></string>
-				<key>device-id</key>
-				<data>
-				FjoAAA==
-				</data>
-			</dict>
-			<key>#PciRoot(0x0)/Pci(0x1f,0x3)</key>
-			<dict>
-				<key>#SBUS</key>
-				<string></string>
-				<key>device-id</key>
-				<data>
-				MDoAAA==
-				</data>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>@0,connector-type</key>
@@ -199,21 +157,35 @@
 				OToAAA==
 				</data>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1a,0x7)</key>
+			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
 			<dict>
-				<key>device-id</key>
+				<key>MaximumBootBeepVolume</key>
 				<data>
-				PDoAAA==
+				AA==
+				</data>
+				<key>No-hda-gfx</key>
+				<data>
+				AAAAAA==
+				</data>
+				<key>PinConfigurations</key>
+				<data>
+				AA==
+				</data>
+				<key>layout-id</key>
+				<data>
+				QgAAAA==
 				</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1c,0x5)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>built-in</key>
 				<data>
-				AQ==
+				AA==
 				</data>
-				<key>location</key>
-				<string>1</string>
+				<key>device-id</key>
+				<data>
+				VEMAAA==
+				</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1d,0x0)</key>
 			<dict>
@@ -236,26 +208,15 @@
 				NjoAAA==
 				</data>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1d,0x7)</key>
-			<dict>
-				<key>device-id</key>
-				<data>
-				OjoAAA==
-				</data>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x1e,0x0)/Pci(0x4,0x0)</key>
 			<dict>
 				<key>built-in</key>
 				<data>
-				AQ==
+				AA==
 				</data>
-				<key>location</key>
-				<string>2</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x2)</key>
 			<dict>
-				<key>#SATA</key>
-				<string></string>
 				<key>device-id</key>
 				<data>
 				gSYAAA==
@@ -264,28 +225,26 @@
 		</dict>
 		<key>USB</key>
 		<dict>
-			<key>FixOwnership</key>
-			<false/>
-			<key>HighCurrent</key>
-			<false/>
 			<key>Inject</key>
 			<false/>
 		</dict>
 	</dict>
 	<key>GUI</key>
 	<dict>
-		<key>##Language</key>
-		<string>ru-RU:252</string>
-		<key>#Hide</key>
-		<array>
-			<string>BOOTX64.efi</string>
-			<string>Recovery HD</string>
-		</array>
+		<key>#EmbeddedThemeType</key>
+		<string>Daytime</string>
+		<key>#PlayAsync</key>
+		<true/>
+		<key>#ScreenResolution</key>
+		<string>1600x1200</string>
 		<key>Hide</key>
 		<array>
 			<string>Recovery HD</string>
 			<string>PreBoot</string>
+			<string>BOOTX64.efi</string>
 		</array>
+		<key>KbdPrevLang</key>
+		<true/>
 		<key>Language</key>
 		<string>ru:19456</string>
 		<key>Scan</key>
@@ -293,10 +252,29 @@
 			<key>Legacy</key>
 			<string>NO</string>
 		</dict>
-		<key>ScreenResolution</key>
-		<string>1600x1200</string>
 		<key>Theme</key>
 		<string>embedded</string>
+		<key>Timezone</key>
+		<integer>3</integer>
+	</dict>
+	<key>Graphics</key>
+	<dict>
+		<key>EDID</key>
+		<dict>
+			<key>#ProductID</key>
+			<string>0xa021</string>
+			<key>#VendorID</key>
+			<string>0x10ac</string>
+			<key>Custom</key>
+			<data>
+			AP///////wAQrCGgTEtIMQYSAQSQKR947u6Ro1RMmSYPUFSlSwCB
+			gKlAcU8BAQEBAQEBAQEBSD9AMGKwMkBAwBMAbxMRAAAeAAAA/wBN
+			WTU0NjgyODFIS0wKAAAA/ABERUxMIDIwMDdGUAogAAAA/QA4TB5T
+			EQAKICAgICAgAHQ=
+			</data>
+			<key>Inject</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -308,29 +286,11 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>External icons patch</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				RXh0ZXJuYWw=
-				</data>
-				<key>Name</key>
-				<string>AppleAHCIPort</string>
-				<key>Replace</key>
-				<data>
-				SW50ZXJuYWw=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>TRIM function for non-Apple SSDs</string>
 				<key>Find</key>
 				<data>
 				QVBQTEUgU1NEAA==
 				</data>
-				<key>MatchOS</key>
-				<string>10.9</string>
 				<key>Name</key>
 				<string>IOAHCIBlockStorage</string>
 				<key>Replace</key>
@@ -341,8 +301,6 @@
 			<dict>
 				<key>Comment</key>
 				<string>AppleHDA XML to ZML</string>
-				<key>Disabled</key>
-				<false/>
 				<key>Find</key>
 				<data>
 				eG1sLnps
@@ -356,9 +314,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Wi-Fi Region</string>
-				<key>Disabled</key>
-				<false/>
+				<string>Atheros Wi-Fi Region</string>
 				<key>Find</key>
 				<data>
 				D7eH3AQAAA==
@@ -374,27 +330,29 @@
 	</dict>
 	<key>RtVariables</key>
 	<dict>
+		<key>CsrActiveConfig</key>
+		<string>0x77</string>
 		<key>ROM</key>
 		<string>UseMacAddr0</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>BoardSerialNumber</key>
-		<string>QT94205J41KM5</string>
+		<string>G81470EUH1K5S</string>
 		<key>ProductName</key>
-		<string>MacPro3,1</string>
+		<string>MacPro5,1</string>
 		<key>SerialNumber</key>
-		<string>QT94329W5J4</string>
+		<string>G8148EYQEUH</string>
 		<key>smUUID</key>
-		<string>A091001E-8C00-012A-DB19-001FC652A806</string>
+		<string>08FEFAE2-A2C8-4371-83D5-7D9DC2FC153E</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
-		<key>#NvidiaWeb</key>
-		<false/>
 		<key>InjectKexts</key>
 		<true/>
 		<key>InjectSystemID</key>
+		<true/>
+		<key>NvidiaWeb</key>
 		<true/>
 	</dict>
 </dict>

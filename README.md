@@ -1,6 +1,7 @@
 # ASUS-P5E3Premium-Hackintosh
 
-Hackintosh for [P5E3 Premium/WiFi-AP @n](http://www.asus.com/Motherboards/P5E3_PremiumWiFiAP_n) motherboard using OS X 10.8.3 Mountain Lion.  
+Hackintosh for [P5E3 Premium/WiFi-AP @n](http://www.asus.com/Motherboards/P5E3_PremiumWiFiAP_n) motherboard using OS X 10.9.5 Mavericks ...10.12.6 Sierra
+Installation of High Sierra and Mojave is possible but Sleep does not work
 This is a minimal guide that fits my hardware configuration.
 
 Intel X48 chipset.  
@@ -59,7 +60,7 @@ Install [DSDT Editor](http://www.insanelymac.com/forum/topic/223205-dsdt-editor-
 - Extract DSDT
 - Apply `all_dsdt_patches.txt` patch
 - IASL Compile + fix errors
-- Save AML as *.aml on the desktop for MultiBeast or directly to `/Extra/DSDT.aml`
+- Save AML as *.aml on the desktop or directly to `/Extra/DSDT.aml`
 
 Sources:
 
@@ -72,7 +73,6 @@ Sources:
 
 
 - I didn't test the Ralink RT2770F wireless card, check [Airport-like app for Ralink 2870](http://www.insanelymac.com/forum/topic/168984-airport-like-app-for-ralink-2870/)
-- I didn't test the Marvell Yukon 88E8056 Ethernet card, plug your Ethernet cable to the Realtek RTL-8110SC card
 - I didn't test the JMicron JMB363 ATA-133/SATA-3.0 controller, check [JMicron ATA Support - might not work with 10.8](http://tonymacx86.blogspot.fr/2010/03/jmicron-ata-support.html)
 - If you want to boot on a [4K Advanced Format hard disk](http://en.wikipedia.org/wiki/Advanced_Format), check [How to fix the boot0 error for your Hackintosh](http://www.macbreaker.com/2012/02/hackintosh-boot0-error.html)
 

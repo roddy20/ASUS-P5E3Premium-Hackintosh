@@ -35,13 +35,13 @@
 					<integer>299112843</integer>
 					<key>ConfigData</key>
 					<data>
-					ASceEAJHHhABZx4QAlceEAF3HqABdx+RAUce
+					ASceEAFnHhACRx4QAlceEAF3HqABdx+RAUce
 					gQ==
 					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
-					<integer>12</integer>
+					<integer>66</integer>
 				</dict>
 				<dict>
 					<key>Codec</key>
@@ -50,28 +50,12 @@
 					<integer>299112843</integer>
 					<key>ConfigData</key>
 					<data>
-					ASceEAJHHhABZx4QAlceEAF3HqABdx+RAUce
-					gQ==
+					ASceEAF3HqABdx+RAUcegQ==
 					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
-					<integer>7</integer>
-				</dict>
-				<dict>
-					<key>Codec</key>
-					<string>AD1988b</string>
-					<key>CodecID</key>
-					<integer>299112843</integer>
-					<key>ConfigData</key>
-					<data>
-					ASceEAJHHhABZx4QAlceEAF3HqABdx+RAUce
-					gQ==
-					</data>
-					<key>FuncGroup</key>
-					<integer>1</integer>
-					<key>LayoutID</key>
-					<integer>1</integer>
+					<integer>0</integer>
 				</dict>
 			</array>
 			<key>IOClass</key>
@@ -80,47 +64,6 @@
 			<string>AppleHDAHardwareConfigDriver</string>
 			<key>IOProviderClass</key>
 			<string>AppleHDAHardwareConfigDriverLoader</string>
-			<key>PostConstructionInitialization</key>
-			<array>
-				<dict>
-					<key>CodecID</key>
-					<integer>299112843</integer>
-					<key>FuncGroup</key>
-					<integer>1</integer>
-					<key>Layouts</key>
-					<array>
-						<integer>12</integer>
-						<integer>1</integer>
-					</array>
-					<key>widgets</key>
-					<array>
-						<dict>
-							<key>NodeID</key>
-							<integer>19</integer>
-							<key>PinConfigDefault</key>
-							<integer>1073742064</integer>
-						</dict>
-						<dict>
-							<key>NodeID</key>
-							<integer>24</integer>
-							<key>PinConfigDefault</key>
-							<integer>1073742064</integer>
-						</dict>
-						<dict>
-							<key>NodeID</key>
-							<integer>26</integer>
-							<key>PinConfigDefault</key>
-							<integer>1073742064</integer>
-						</dict>
-						<dict>
-							<key>NodeID</key>
-							<integer>28</integer>
-							<key>PinConfigDefault</key>
-							<integer>1073742064</integer>
-						</dict>
-					</array>
-				</dict>
-			</array>
 		</dict>
 	</dict>
 	<key>OSBundleCompatibleVersion</key>

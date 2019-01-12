@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>13F1911</string>
+	<string>16G1618</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -20,22 +20,26 @@
 	<string>3.5.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>3.5.1</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>6C131e</string>
+	<string>9C40b</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>14A383</string>
+	<string>15A278</string>
 	<key>DTSDKName</key>
-	<string>macosx10.10</string>
+	<string>macosx10.11</string>
 	<key>DTXcode</key>
-	<string>0620</string>
+	<string>0920</string>
 	<key>DTXcodeBuild</key>
-	<string>6C131e</string>
+	<string>9C40b</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>SMC Device Emulator</key>
@@ -48,7 +52,7 @@
 				<dict>
 					<key>$Num</key>
 					<array>
-						<string>ui8</string>
+						<string>ui8 </string>
 						<data>
 						AQ==
 						</data>
@@ -151,13 +155,6 @@
 						AQ==
 						</data>
 					</array>
-					<key>MSLD</key>
-					<array>
-						<string>ui8</string>
-						<data>
-						AA==
-						</data>
-					</array>
 					<key>MSPS</key>
 					<array>
 						<string>{msp</string>
@@ -214,7 +211,7 @@
 						Q29tcHV0ZXJJbmM=
 						</data>
 					</array>
-					<key>REV</key>
+					<key>REV </key>
 					<array>
 						<string>{rev</string>
 						<data>
