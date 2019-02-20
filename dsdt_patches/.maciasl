@@ -16,4 +16,4 @@ HDEF DSDT 15_HDEF PCI0.txt
 LPCB DSDT 16_LPC ICH9.txt
 AHCI SATA DSDT 17_AHCI SATA orange icon.txt
 Rename Devices DSDT 18_Mac devices.txt
-LNKx Patch_LNKx.txt
+LNKx DSDT Patch_LNKx.txt
