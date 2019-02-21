@@ -1,19 +1,19 @@
-T_x rename DSDT 01_T_x rename.txt
-DTGP DSDT 02_DTGP.txt
-FGET DSDT 03_FGET.txt
-TGET DSDT 04_TGET.txt
-VGET DSDT 05_VGET.txt
-HID DSDT 06_HID para CID.txt
-IRGs DSDT 07_IRQs.txt
-MUTE DSDT 08_MUTE.txt
-Remove Devices DSDT 09_Remove devices.txt
-SBUS DSDT 10_SBUS.txt
-Fix Shutdown DSDT 11_Shutdown ASUS.txt
-EHCI DSDT 12_EHCI sleep.txt
-UHCI DSDT 13_ICH9 USB sleep.txt
-HPET DSDT 14_HPET.txt
-HDEF DSDT 15_HDEF PCI0.txt
-LPCB DSDT 16_LPC ICH9.txt
-AHCI SATA DSDT 17_AHCI SATA orange icon.txt
-Rename Devices DSDT 18_Mac devices.txt
-LNKx DSDT Patch_LNKx.txt
+[P5E3] T_x rename DSDT 01_T_x rename.txt
+[P5E3] DTGP DSDT 02_DTGP.txt
+[P5E3] FGET DSDT 03_FGET.txt
+[P5E3] TGET DSDT 04_TGET.txt
+[P5E3] VGET DSDT 05_VGET.txt
+[P5E3] HID DSDT 06_HID para CID.txt
+[P5E3] IRGs DSDT 07_IRQs.txt
+[P5E3] MUTE DSDT 08_MUTE.txt
+[P5E3] Remove Devices DSDT 09_Remove devices.txt
+[P5E3] SBUS DSDT 10_SBUS.txt
+[P5E3] Fix Shutdown DSDT 11_Shutdown ASUS.txt
+[P5E3] EHCI DSDT 12_EHCI sleep.txt
+[P5E3] UHCI DSDT 13_ICH9 USB sleep.txt
+[P5E3] HPET DSDT 14_HPET.txt
+[P5E3] HDEF DSDT 15_HDEF PCI0.txt
+[P5E3] LPCB DSDT 16_LPC ICH9.txt
+[P5E3] AHCI SATA DSDT 17_AHCI SATA orange icon.txt
+[P5E3] Rename Devices DSDT 18_Mac devices.txt
+[P5E3] LNKx DSDT Patch_LNKx.txt
